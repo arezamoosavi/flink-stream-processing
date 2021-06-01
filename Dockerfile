@@ -15,4 +15,4 @@ RUN cd /opt/project && mvn assembly:assembly
 
 WORKDIR /opt/project
 
-CMD ["java", "-jar", "target/flink-stream-processing-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/flink-stream-processing-1.0-SNAPSHOT.jar"]

@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  flink:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    command: sleep infinity
